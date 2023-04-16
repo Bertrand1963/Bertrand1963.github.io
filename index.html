@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EASY-CALC</title>
+    <link rel="stylesheet" href="./css/easycalc.css" />
+  </head>
+
+  <body>
+    <div class="wrapper couleurBack couleurPol">
+      <div class="wrapperHeader couleurBackPastilles"> 
+        <h1>:: CALCULATOR ::</h1>
+      </div>
+      <div class="wrapperSeparateurHoriz couleurSep" id="sepH"></div>
+      <div class="wrapperAddNumber">
+        <input type="number" placeholder="0" id="new-num1-input"/>
+        <p>&#32</p>  <!--  espace entre les 2 inputs -->
+        <input type="number" placeholder="0" id="new-num2-input" />
+      </div>
+      <div class="wrapperTopGrid couleurPol">
+         <div>A</div>
+         <div>&#32</div>
+         <div>B</div>
+      </div>
+      <div class="wrapperSeparateurHorizLarge couleurSep" id="sepHwide"></div>
+      <div class="wrapperCenterBtn couleurBackPastilles">
+        <p><button class="submit-btn couleurBackPastilles btn-x" id="btn1">Submit</button></p>
+      </div>
+      <div class="wrapperSeparateurHorizLarge couleurSep" id="sepHwide"></div>
+      <div class="wrapperGridResult">
+        <template id = "lignes-result">
+          <div class="GridGauche couleurBackPastilles" id="ResG">G</div>        <div class="GridDroite" id="ResD">D</div>
+        </template>
+      </div>
+      <div class="wrapperSeparateurHorizLarge couleurSep" id="sepHwide"></div>
+      <div class="wrapperCenterBtn couleurBackPastilles">
+        <p><button class="clear-btn couleurBackPastilles btn-x" id="btn2">Clear All</button></p>
+      </div>
+    </div>  <!-- fin wrapper -->
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="./js/easycalcmain.js"></script>   
+  </body>
+</html>
